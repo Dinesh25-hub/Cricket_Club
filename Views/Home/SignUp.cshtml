@@ -1,0 +1,29 @@
+﻿@model Cricket_Club.Models.Credential
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Sign Up</h2>
+    <form asp-action="Login" method="post">
+        <input type="text" placeholder="Name" asp-for="Name" required />
+        <br />
+        <br />
+
+        <input type="text" placeholder="Username" asp-for="UserName" required />
+        <br />
+        <br />
+
+        <input type="email" placeholder="Email" asp-for="Email" required />
+        <br />
+        <br />
+
+        <input type="password" placeholder="Password" asp-for="Password" required />
+        <br />
+        <br />
+        <input type="submit" value="SignUp" />
+    </form>
+</body>
+</html>

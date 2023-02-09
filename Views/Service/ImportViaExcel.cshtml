@@ -1,0 +1,16 @@
+﻿@model Cricket_Club.Models.ServiceModel.ImportVM
+@{
+}
+
+
+<h5>Upload file ...  </h5>
+<div class="mb-3 mt-5">
+    <form method="post" asp-action="ImportViaExcel" enctype="multipart/form-data">
+     <div class="mb-3">
+         <input asp-for="file" class="form-control" >
+    </div>
+    <div >
+        <button type="submit" class="btn-primary">Upload</button>
+    </div>
+    </form>
+</div>

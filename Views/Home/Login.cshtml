@@ -1,0 +1,43 @@
+﻿@model Cricket_Club.Models.Credential
+
+@{
+    Layout = null;
+}
+
+
+<link rel="stylesheet" href="~/css/LoginStyle.css">
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page </title>
+</head>
+
+<body class="bg-image">
+    <div class="bg-pad">
+
+
+        <div>
+            <h1>
+                Login <i class="bi bi-box-arrow-in-right"></i>
+            </h1>
+        </div>
+        <br />
+        <form asp-action="Home" asp-controller="Home" method="post">
+            <div class="textbox">
+                <i class="bi bi-person"></i>
+                <input type="text"  placeholder="Username" asp-for="UserName" required>
+            </div>
+
+            <br />
+            <div class="textbox">
+                <i class="bi bi-key"></i>
+                <input type="password" placeholder="Password" asp-for="Password" required>
+            </div>
+            <br />
+            <input type="submit" value="Login" class="link-bg" />
+        </form>
+        <br />
+        </div>
+</body>
+</html>

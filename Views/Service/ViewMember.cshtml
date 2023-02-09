@@ -1,0 +1,52 @@
+﻿@model List<Cricket_Club.Models.Cricketer>
+@{
+}
+
+<div class="row  fw-normal">
+    <h1 class="col-11"><i class="bi bi-clipboard-data"></i> Club Members</h1><p class="col-1"><a asp-action="ExportViaExcel" class="btn btn-primary">Export</a></p>
+</div>
+
+<br />
+<div class="fw-light">
+    <form method="post" asp-action="Search" asp-controller="Service">
+        <div class="input-group justify-content-end">
+            <div class="form-outline">
+                <input type="search" class="form-control" placeholder="Search" />
+
+            </div>
+            <button type="Submit" class="btn btn-primary rounded btn-block">
+                <i class="bi bi-search"> </i>
+            </button>
+        </div>
+    </form>
+    <br />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Team</th>
+                <th>MatchPlayed</th>
+                <th>TatalScore</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var data in Model)
+            {
+                <tr>
+                    <td>@data.Id</td>
+                    <td>@data.Name</td>
+                    <td>@data.Gender</td>
+                    <td>@data.Team</td>
+                    <td>@data.MatchPlayed</td>
+                    <td>@data.TotalScore</td>
+                    <td>@data.Salary</td>
+                    <td><a href="EditMember/@data.Id">Edit Member</a></td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>

@@ -1,0 +1,57 @@
+﻿@model Cricket_Club.Models.Cricketer
+@{
+}
+
+
+
+
+<div class="row">
+    <h2 class="col-11">
+        Edit Member..
+    </h2>
+
+</div>
+
+<form method="post" asp-action="EditMember" asp-controller="Service">
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Gender</label>
+        <input type="text" class="form-control" asp-for="Gender">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Team</label>
+        <input type="text" class="form-control" asp-for="Team">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">match Played</label>
+        <input type="number" class="form-control" asp-for="MatchPlayed">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Total Score</label>
+        <input type="number" class="form-control" asp-for="TotalScore">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Salary</label>
+        <input type="number" class="form-control" asp-for="Salary">
+    </div>
+   
+
+
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <button type="submit" asp-action="DeleteMember" class="btn btn-primary btn btn-space ">Delete</button>
+    </div>
+
+</form>

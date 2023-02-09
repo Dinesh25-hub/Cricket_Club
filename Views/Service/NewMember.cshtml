@@ -1,0 +1,47 @@
+﻿@model Cricket_Club.Models.Cricketer
+@{
+}
+
+<!DOCTYPE html>
+<html>
+<body style="background-color:lavender">
+    <div class=" fw-normal ">
+        <h2>Add Details </h2>
+        <form method="post" action="NewMember">
+            <div class="mb-3">
+                <label for="" class="form-label">Name</label>
+                <input type="text" class="form-control" asp-for="Name">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Gender</label>
+                <input type="text" class="form-control" asp-for="Gender">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Team</label>
+                <input type="text" class="form-control" asp-for="Team">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Match Played</label>
+                <input type="number" class="form-control" asp-for="MatchPlayed">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Total Score</label>
+                <input type="number" class="form-control" asp-for="TotalScore">
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Salary</label>
+                <input type="number" class="form-control" asp-for="Salary">
+            </div>
+
+
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
