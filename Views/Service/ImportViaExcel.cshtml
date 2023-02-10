@@ -3,14 +3,26 @@
 }
 
 
+<link rel="stylesheet" href="~/css/ImportStyle.css">
+
+
+<!DOCTYPE html>
+<html>
+<body class="body">
+    <div class="div-bg">
+        <br />
 <h5>Upload file ...  </h5>
 <div class="mb-3 mt-5">
     <form method="post" asp-action="ImportViaExcel" enctype="multipart/form-data">
      <div class="mb-3">
+         <div class="div-search">
          <input asp-for="file" class="form-control" >
+         </div>
     </div>
     <div >
-        <button type="submit" class="btn-primary">Upload</button>
+        <button type="submit" class="btn-upload">Upload</button>
     </div>
     </form>
 </div>
+    </div>
+</body></html>

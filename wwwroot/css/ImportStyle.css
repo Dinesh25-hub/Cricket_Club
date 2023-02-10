@@ -1,0 +1,26 @@
+﻿.body {
+    background-image: url("https://images.pexels.com/photos/357514/pexels-photo-357514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.div-bg {
+    background-color:#ffffffe6;
+    text-align:center;
+    height:200px;
+    width:800px;
+    margin-left:200px;
+    margin-top:100px;
+}
+.div-search {
+    margin-left:90px;
+    margin-right:90px;
+}
+.btn-upload {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    background-color: #4a8be4;
+    color: white;
+    position: relative;
+    padding:7px;
+}

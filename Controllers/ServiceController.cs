@@ -89,14 +89,14 @@ namespace Cricket_Club.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> DeleteMember(Cricketer update)
+        public IActionResult DeleteMember(Cricketer update)
         {
             var Id = update.Id;
-            var data = await datacontext.cricketer.FirstOrDefaultAsync(x => x.Id == Id);
+            var data = datacontext.cricketer.FirstOrDefault(x => x.Id == Id);
             if (data != null)
             {
                 datacontext.cricketer.Remove(data);
-                await datacontext.SaveChangesAsync();
+                datacontext.SaveChangesAsync();
 
             }
             return RedirectToAction("ViewMember");

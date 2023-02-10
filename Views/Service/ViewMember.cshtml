@@ -2,24 +2,20 @@
 @{
 }
 
+<link rel="stylesheet" href="~/css/ViewMemberStyle.css">
+
+<!DOCTYPE html>
+<html>
+<body class="body">
+<div class="div-bg">
+    <br />
+    <div class="div-nested">
 <div class="row  fw-normal">
-    <h1 class="col-11"><i class="bi bi-clipboard-data"></i> Club Members</h1><p class="col-1"><a asp-action="ExportViaExcel" class="btn btn-primary">Export</a></p>
+    <h1 class="col-11"><i class="bi bi-clipboard-data"></i> Club Member..</h1><p class="col-1"><a asp-action="ExportViaExcel" class="btn btn-primary">Export </a></p>
 </div>
 
 <br />
-<div class="fw-light">
-    <form method="post" asp-action="Search" asp-controller="Service">
-        <div class="input-group justify-content-end">
-            <div class="form-outline">
-                <input type="search" class="form-control" placeholder="Search" />
-
-            </div>
-            <button type="Submit" class="btn btn-primary rounded btn-block">
-                <i class="bi bi-search"> </i>
-            </button>
-        </div>
-    </form>
-    <br />
+    <div>
     <table class="table">
         <thead>
             <tr>
@@ -30,6 +26,7 @@
                 <th>MatchPlayed</th>
                 <th>TatalScore</th>
                 <th>Salary</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -50,3 +47,8 @@
 
     </table>
 </div>
+        </div>
+<br />
+    </div>
+</body>
+</html>

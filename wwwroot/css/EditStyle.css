@@ -1,0 +1,28 @@
+﻿.body {
+    background-image: url("https://images.pexels.com/photos/4578418/pexels-photo-4578418.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.div-float{
+    align-items:center;
+    width:800px;
+    background-color:#ffffffe6;
+    height:750px;
+    font-size:16px;
+    margin-top:30px;
+    margin-left:-55px;
+}
+.div-float{
+    margin-left:10px;
+}
+.btn-action {
+    border-radius: 5px;
+    background-color: #3e7cef;
+    color: white;
+    margin-left: 10px;
+    border-color: #808080;
+    box-shadow: 5px 8px 10px #808080e4;
+}
+

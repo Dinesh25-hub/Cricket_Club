@@ -2,46 +2,52 @@
 @{
 }
 
+
+<link rel="stylesheet" href="~/css/NewMemberStyle.css">
+
 <!DOCTYPE html>
 <html>
-<body style="background-color:lavender">
+<body class="body">
+    <br />
+    <div class="div-half">
     <div class=" fw-normal ">
-        <h2>Add Details </h2>
+        <h2>New Member </h2>
+        <br />
         <form method="post" action="NewMember">
-            <div class="mb-3">
-                <label for="" class="form-label">Name</label>
+            <div class="form-floating mb-3">
                 <input type="text" class="form-control" asp-for="Name">
+                    <label for="floatingInput">Name</label>
             </div>
 
-            <div class="mb-3">
-                <label for="" class="form-label">Gender</label>
+            <div class="form-floating mb-3">
                 <input type="text" class="form-control" asp-for="Gender">
+                    <label for="floatingInput">Gender</label>
             </div>
 
-            <div class="mb-3">
-                <label for="" class="form-label">Team</label>
+            <div class="form-floating mb-3">
                 <input type="text" class="form-control" asp-for="Team">
+                    <label for="floatingInput">Team</label>
             </div>
 
-            <div class="mb-3">
-                <label for="" class="form-label">Match Played</label>
+            <div class="form-floating mb-3">
                 <input type="number" class="form-control" asp-for="MatchPlayed">
+                    <label for="floatingInput">Match Played</label>
             </div>
 
-            <div class="mb-3">
-                <label for="" class="form-label">Total Score</label>
+            <div class="form-floating mb-3">
                 <input type="number" class="form-control" asp-for="TotalScore">
+                <label for="floatingInput">Total Score</label>
             </div>
-
-            <div class="mb-3">
-                <label for="" class="form-label">Salary</label>
+            <div class="form-floating mb-3">
                 <input type="number" class="form-control" asp-for="Salary">
+                <label for="floatingInput">Salary</label>
             </div>
 
 
 
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+    </div>
     </div>
 </body>
 </html>

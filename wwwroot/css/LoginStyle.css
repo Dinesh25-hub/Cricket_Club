@@ -1,19 +1,22 @@
 ﻿.bg-image {
-    background-image: url("https://images.unsplash.com/photo-1566321383084-2ddfb8ce4766?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80");
-    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1502444330042-d1a1ddf9bb5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80");
+    height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .bg-pad {
-    margin-top: 300px;
-    margin-right: 800px;
-    background-color:#ffffffcc;
+    text-align: center;
+    margin-top: 120px;
+    margin-left: 480px;
+    background-color: #ffffffd5;
     padding: 40px;
-    height: auto;
-    width: auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 250px;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    border-radius: 8px;
 }
 
 .link-text {
@@ -37,5 +40,15 @@ input[type=submit] {
     padding: 10px 30px;
     text-align: center;
     cursor: pointer;
+    border-radius: 7px;
+}
+input[type="text"] {
+    width: 300px;
+    height: 30px;
+    border-radius: 7px;
+}
+input[type="password"] {
+    width: 300px;
+    height: 30px;
     border-radius: 7px;
 }

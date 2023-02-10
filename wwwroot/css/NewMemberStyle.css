@@ -1,0 +1,11 @@
+﻿.body {
+    background-image: url("https://images.pexels.com/photos/4578418/pexels-photo-4578418.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.div-half{
+    margin-left:-40px;
+    margin-right:450px;
+}
