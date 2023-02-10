@@ -9,3 +9,11 @@
     margin-left:-40px;
     margin-right:450px;
 }
+.btn-action {
+    border-radius: 5px;
+    background-color: #3e7cef;
+    color: white;
+    margin-left: 10px;
+    border-color: #808080;
+    box-shadow: 5px 8px 10px #808080e4;
+}
