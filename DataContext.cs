@@ -8,5 +8,6 @@ public class DataContext:DbContext
     }
 
     public DbSet<Cricketer> cricketer { get; set; }
+   
     public DbSet<Credential> credential{ get; set; }
 }

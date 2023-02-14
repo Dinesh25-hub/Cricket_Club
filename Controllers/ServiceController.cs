@@ -44,7 +44,7 @@ namespace Cricket_Club.Controllers
             };
             await datacontext.cricketer.AddAsync(data);
             await datacontext.SaveChangesAsync();
-            return RedirectToAction("NewMember");
+            return RedirectToAction("ViewMember");
         }
 
         public IActionResult EditMember(Guid Id)
@@ -83,7 +83,6 @@ namespace Cricket_Club.Controllers
                 data.Salary = model.Salary;
                 datacontext.cricketer.Update(data);
                 datacontext.SaveChangesAsync();
-                return View(model);
             }
             return RedirectToAction("ViewMember");
         }
